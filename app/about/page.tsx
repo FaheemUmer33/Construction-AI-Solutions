@@ -6,8 +6,8 @@ import { brand } from "@/lib/brand";
 import { getProfile } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About CIVORA INFRASTRUCTURE",
-  description: "Company overview for CIVORA INFRASTRUCTURE, a civil engineering and infrastructure development company focused on planning, execution, quality, safety, and communication."
+  title: "About Construction AI Solutions",
+  description: "Company overview for Construction AI Solutions, an AI-enhanced construction operations platform focused on automation, project intelligence, quality, safety, and communication."
 };
 
 const values = ["Planning", "Execution", "Quality", "Safety", "Communication"];
@@ -33,16 +33,16 @@ export default async function AboutPage() {
           <p className="mt-5 text-lg leading-9 text-slate-300">
             Our team specializes in construction management, site execution, civil works coordination, material planning, contractor alignment, and quality-led handover systems.
           </p>
-          <div className="mt-8 grid gap-3 sm:grid-cols-5">{values.map((value) => <div key={value} className="rounded-lg border border-white/10 bg-white/[0.04] p-4 text-center font-semibold text-safety">{value}</div>)}</div>
+          <div className="mt-8 grid gap-3 sm:grid-cols-5">{values.map((value) => <div key={value} className="rounded-lg border border-white/10 bg-white/[0.04] p-4 text-center font-medium text-safety">{value}</div>)}</div>
         </div>
       </section>
       <section className="mt-16 grid gap-8 lg:grid-cols-2">
         <div>
-          <h2 className="text-2xl font-bold">Delivery Framework</h2>
-          <div className="mt-6 grid gap-4">{timeline.map((item, index) => <div key={item} className="rounded-lg border border-white/10 bg-white/[0.04] p-5"><p className="text-sm text-safety">0{index + 1}</p><p className="text-lg font-semibold">{item}</p></div>)}</div>
+          <h2 className="font-display text-2xl font-medium tracking-[0.01em]">Delivery Framework</h2>
+          <div className="mt-6 grid gap-4">{timeline.map((item, index) => <div key={item} className="rounded-lg border border-white/10 bg-white/[0.04] p-5"><p className="text-sm text-safety">0{index + 1}</p><p className="font-display text-lg font-medium">{item}</p></div>)}</div>
         </div>
         <div>
-          <h2 className="text-2xl font-bold">Construction Capability Areas</h2>
+          <h2 className="font-display text-2xl font-medium tracking-[0.01em]">Construction Capability Areas</h2>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">{skills.map((skill) => <div key={skill} className="rounded-lg bg-white/[0.05] p-4 text-slate-200">{skill}</div>)}</div>
         </div>
       </section>

@@ -34,7 +34,7 @@ export function LoginForm() {
     <form onSubmit={submit} className="industrial-card mx-auto grid max-w-md gap-4 rounded-lg p-7">
       <BrandLogo />
       <div>
-        <h1 className="text-2xl font-bold">Company CMS Login</h1>
+        <h1 className="font-display text-2xl font-medium tracking-[0.01em]">Company CMS Login</h1>
         <p className="mt-2 text-sm text-slate-400">{brand.tagline}</p>
       </div>
       <label className="grid gap-2 text-sm text-slate-300">Email<input className="rounded-md border border-white/10 bg-white/5 px-4 py-3 text-white" value={email} onChange={(e) => setEmail(e.target.value)} type="email" required /></label>

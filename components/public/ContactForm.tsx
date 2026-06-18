@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { contactSchema, type ContactInput } from "@/lib/validations/contact";
 
-const projectTypes = ["Residential", "Commercial", "Infrastructure", "Renovation", "Industrial", "Consulting"];
+const projectTypes = ["AI Site Monitoring", "Project Intelligence Dashboard", "Workflow Automation", "Client Communication Automation", "Infrastructure Delivery", "Construction Consulting"];
 const budgets = ["To be discussed", "Under $25k", "$25k - $100k", "$100k - $500k", "$500k+"];
 
 export function ContactForm() {
@@ -32,10 +32,10 @@ export function ContactForm() {
     }
   }
 
-  const input = "w-full rounded-md border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-safety";
+  const input = "w-full rounded-md border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition placeholder:text-cas-mint/55 focus:border-cas-light focus:bg-white/[0.08] focus:shadow-[0_0_0_4px_rgba(165,199,183,0.16)]";
 
   return (
-    <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-4 rounded-lg border border-white/10 bg-white/[0.04] p-5 md:p-7">
+    <form onSubmit={form.handleSubmit(onSubmit)} className="industrial-card grid gap-4 rounded-lg p-5 md:p-7">
       <div className="grid gap-4 md:grid-cols-2">
         <label className="grid gap-2 text-sm text-slate-300">Full Name<input className={input} {...form.register("full_name")} /></label>
         <label className="grid gap-2 text-sm text-slate-300">Email<input className={input} type="email" {...form.register("email")} /></label>

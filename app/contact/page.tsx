@@ -6,7 +6,7 @@ import { brand } from "@/lib/brand";
 import { getProfile } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Contact CIVORA INFRASTRUCTURE",
+  title: "Contact Construction AI Solutions",
   description: "Send a construction management, infrastructure development, civil works, or project execution inquiry."
 };
 
@@ -17,7 +17,7 @@ export default async function ContactPage() {
       <SectionHeading eyebrow="Contact" title={brand.contactLine} />
       <section className="mt-12 grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <aside className="rounded-lg border border-white/10 bg-white/[0.04] p-7">
-          <h2 className="text-2xl font-bold">Contact Information</h2>
+          <h2 className="font-display text-2xl font-medium tracking-[0.01em]">Contact Information</h2>
           <div className="mt-6 grid gap-4 text-slate-300">
             <p className="flex gap-3"><Mail className="text-safety" />{profile.email}</p>
             <p className="flex gap-3"><Phone className="text-safety" />{profile.phone}</p>

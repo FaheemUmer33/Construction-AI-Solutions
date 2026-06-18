@@ -30,7 +30,7 @@ export function Navbar() {
   return (
     <header className={`sticky top-0 z-50 border-b border-white/10 bg-steel/88 backdrop-blur-xl transition-all duration-300 ${scrolled ? "shadow-elevation2" : ""}`}>
       <nav className={`container-shell flex items-center justify-between transition-all duration-300 ${scrolled ? "h-14" : "h-[72px] py-2"}`}>
-        <Link href="/" className="flex items-center gap-3 font-bold">
+        <Link href="/" className="flex items-center gap-3 font-medium">
           <BrandLogo />
         </Link>
         <div className="hidden items-center gap-1 lg:flex">

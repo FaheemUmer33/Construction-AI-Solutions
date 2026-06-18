@@ -1,15 +1,15 @@
 export const brand = {
-  name: "CIVORA INFRASTRUCTURE",
-  shortName: "CIVORA",
-  initials: "CI",
-  domain: "https://civora-infrastructure.vercel.app",
-  tagline: "Civil Engineering and Infrastructure Development Company",
-  seoTitle: "CIVORA INFRASTRUCTURE | Civil Engineering and Infrastructure Development Company",
+  name: "Construction AI Solutions",
+  shortName: "Construction AI",
+  initials: "CAS",
+  domain: "https://construction-ai-solutions.vercel.app",
+  tagline: "AI-Enhanced Construction Operations Platform",
+  seoTitle: "Construction AI Solutions | AI-Enhanced Construction Operations Platform",
   description:
-    "CIVORA INFRASTRUCTURE delivers construction management, site execution, civil works coordination, and infrastructure development solutions for residential, commercial, and industrial projects.",
+    "Construction AI Solutions delivers AI-enhanced construction management, site monitoring automation, project intelligence, workflow optimization, and client communication systems.",
   ogDescription:
-    "Construction management, site execution, and infrastructure solutions for residential, commercial, and industrial development.",
-  contactLine: "Available for construction collaboration, infrastructure delivery, and project execution discussions.",
+    "AI-enhanced construction management, site monitoring automation, workflow optimization, and infrastructure delivery for residential, commercial, and industrial development.",
+  contactLine: "Request an automation-readiness review for your next construction program.",
   overview:
-    "CIVORA INFRASTRUCTURE is a construction and civil engineering company focused on disciplined site execution, infrastructure coordination, quality control, and practical delivery systems for complex built environments."
+    "Construction AI Solutions is an AI-powered construction platform focused on automated site monitoring, project intelligence, workflow optimization, quality control, and practical delivery systems for complex built environments."
 };

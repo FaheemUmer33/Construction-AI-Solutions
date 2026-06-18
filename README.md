@@ -1,4 +1,4 @@
-# CIVORA INFRASTRUCTURE
+# Construction AI Solutions
 
 Premium construction company website for a civil engineering and infrastructure development brand. The site is built for Vercel deployment and Supabase-managed content.
 
@@ -66,7 +66,7 @@ Array and JSON fields can be edited as JSON text in the admin forms.
 
 Primary site title:
 
-**CIVORA INFRASTRUCTURE | Civil Engineering and Infrastructure Development Company**
+**Construction AI Solutions | AI-Enhanced Construction Operations Platform**
 
 The site is positioned around construction management, site execution, civil works coordination, and infrastructure solutions for residential, commercial, and industrial projects.
 

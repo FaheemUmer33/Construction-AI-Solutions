@@ -65,7 +65,7 @@ export function AdminCrud({
   return (
     <div className="grid gap-8">
       <section className="rounded-lg border border-white/10 bg-white/[0.04] p-5">
-        <h2 className="text-xl font-bold">{editingId ? `Edit ${title}` : `Create ${title}`}</h2>
+        <h2 className="font-display text-xl font-medium tracking-[0.01em]">{editingId ? `Edit ${title}` : `Create ${title}`}</h2>
         <div className="mt-5 grid gap-4 md:grid-cols-2">
           {fields.map((field) => (
             <label key={field} className="grid gap-2 text-sm text-slate-300">

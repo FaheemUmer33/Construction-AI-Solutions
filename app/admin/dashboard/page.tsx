@@ -18,7 +18,7 @@ export default async function AdminDashboardPage() {
   ];
   return (
     <AdminShell title="Dashboard Overview">
-      <div className="grid gap-5 md:grid-cols-4">{stats.map(([label, value]) => <div key={label} className="rounded-lg border border-white/10 bg-white/[0.04] p-6"><p className="text-sm text-slate-400">{label}</p><p className="mt-2 text-3xl font-black text-safety">{value}</p></div>)}</div>
+      <div className="grid gap-5 md:grid-cols-4">{stats.map(([label, value]) => <div key={label} className="rounded-lg border border-white/10 bg-white/[0.04] p-6"><p className="text-sm text-slate-400">{label}</p><p className="mt-2 font-display text-3xl font-semibold tracking-[0.01em] text-safety">{value}</p></div>)}</div>
     </AdminShell>
   );
 }

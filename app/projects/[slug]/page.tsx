@@ -27,7 +27,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <div className="container-shell relative z-10 flex min-h-[58vh] items-end pb-12">
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-safety">{project.category} · {project.location}</p>
-            <h1 className="max-w-4xl text-4xl font-black md:text-6xl">{project.title}</h1>
+            <h1 className="max-w-4xl font-display text-4xl font-semibold leading-tight tracking-[0.01em] md:text-6xl">{project.title}</h1>
           </div>
         </div>
       </section>
@@ -42,8 +42,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             ["Challenges", project.challenges],
             ["Solution", project.solution],
             ["Result", project.result]
-          ].map(([title, text]) => <article key={title}><h2 className="text-2xl font-bold">{title}</h2><p className="mt-3 leading-8 text-slate-300">{text}</p></article>)}
-          <div className="grid gap-4 md:grid-cols-3">{Object.entries(project.metrics).map(([key, value]) => <div key={key} className="industrial-card rounded-lg p-5"><p className="text-sm text-slate-400">{key}</p><p className="mt-1 font-bold text-safety">{value}</p></div>)}</div>
+          ].map(([title, text]) => <article key={title}><h2 className="font-display text-2xl font-medium tracking-[0.01em]">{title}</h2><p className="mt-3 leading-8 text-slate-300">{text}</p></article>)}
+          <div className="grid gap-4 md:grid-cols-3">{Object.entries(project.metrics).map(([key, value]) => <div key={key} className="industrial-card rounded-lg p-5"><p className="text-sm text-slate-400">{key}</p><p className="mt-1 font-display font-medium text-safety">{value}</p></div>)}</div>
         </div>
       </section>
       <section className="container-shell grid gap-5 pb-16 md:grid-cols-2">{project.gallery_urls.map((url) => <div key={url} className="relative aspect-video overflow-hidden rounded-lg"><Image src={url} alt={`${project.title} gallery`} fill className="object-cover" /></div>)}</section>

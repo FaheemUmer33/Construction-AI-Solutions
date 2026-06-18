@@ -16,7 +16,7 @@ const links = [
 
 export function AdminShell({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <div className="min-h-screen bg-[#08111d] text-white">
+    <div className="min-h-screen bg-cas-forest/95 text-white">
       <aside className="fixed inset-y-0 left-0 hidden w-64 border-r border-white/10 bg-steel p-5 lg:block">
         <BrandLogo />
         <p className="mt-5 text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Admin Dashboard</p>
@@ -33,7 +33,7 @@ export function AdminShell({ title, children }: { title: string; children: React
         <div className="border-b border-white/10 bg-steel/80 px-5 py-5 backdrop-blur">
           <div className="container-shell">
             <p className="text-sm text-slate-400">Company content management</p>
-            <h1 className="text-2xl font-bold">{title}</h1>
+            <h1 className="font-display text-2xl font-medium tracking-[0.01em]">{title}</h1>
           </div>
         </div>
         <div className="container-shell py-8">{children}</div>

@@ -10,8 +10,8 @@ export function Button({ className, variant = "primary", ...props }: ButtonProps
     <button
       className={cn(
         "glow-hover inline-flex h-11 items-center justify-center gap-2 rounded-md px-5 text-sm font-semibold transition duration-300 focus:outline-none focus:ring-2 focus:ring-safety",
-        variant === "primary" && "bg-safety text-steel shadow-[0_0_28px_rgba(245,179,1,0.18)] hover:bg-amber-300 hover:shadow-[0_0_38px_rgba(245,179,1,0.26)]",
-        variant === "secondary" && "border border-white/15 bg-white/10 text-white hover:border-safety/35 hover:bg-white/15",
+        variant === "primary" && "bg-cas-light text-cas-forest shadow-[0_0_28px_rgba(223,243,233,0.18)] hover:bg-cas-mint hover:shadow-[0_0_38px_rgba(165,199,183,0.28)]",
+        variant === "secondary" && "border border-cas-mint/35 bg-cas-primary/50 text-white hover:border-cas-light/60 hover:bg-cas-muted/40",
         variant === "ghost" && "text-white/80 hover:bg-white/10 hover:text-white",
         className
       )}
@@ -30,8 +30,8 @@ export function LinkButton({
     <a
       className={cn(
         "glow-hover inline-flex h-11 items-center justify-center gap-2 rounded-md px-5 text-sm font-semibold transition duration-300 focus:outline-none focus:ring-2 focus:ring-safety",
-        variant === "primary" && "bg-safety text-steel shadow-[0_0_28px_rgba(245,179,1,0.18)] hover:bg-amber-300 hover:shadow-[0_0_38px_rgba(245,179,1,0.26)]",
-        variant === "secondary" && "border border-white/15 bg-white/10 text-white hover:border-safety/35 hover:bg-white/15",
+        variant === "primary" && "bg-cas-light text-cas-forest shadow-[0_0_28px_rgba(223,243,233,0.18)] hover:bg-cas-mint hover:shadow-[0_0_38px_rgba(165,199,183,0.28)]",
+        variant === "secondary" && "border border-cas-mint/35 bg-cas-primary/50 text-white hover:border-cas-light/60 hover:bg-cas-muted/40",
         variant === "ghost" && "text-white/80 hover:bg-white/10 hover:text-white",
         className
       )}

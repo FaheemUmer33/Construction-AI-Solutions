@@ -6,7 +6,7 @@ import type { Profile } from "@/types/content";
 
 export function Footer({ profile }: { profile: Profile }) {
   return (
-    <footer className="border-t border-white/10 bg-[#060d16]">
+    <footer className="border-t border-white/10 bg-cas-forest/90 backdrop-blur-md">
       <div className="container-shell grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <BrandLogo />
@@ -34,7 +34,7 @@ export function Footer({ profile }: { profile: Profile }) {
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} {brand.name}. Civil engineering, construction management, and infrastructure solutions.
+        © {new Date().getFullYear()} {brand.name}. AI-enhanced construction automation, project intelligence, and site monitoring.
       </div>
     </footer>
   );

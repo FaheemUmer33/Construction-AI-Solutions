@@ -43,7 +43,7 @@ export function GalleryGrid({ items }: { items: GalleryItem[] }) {
               <Image src={active.image_url} alt={active.title} fill className="object-cover" sizes="90vw" />
             </div>
             <div className="p-5">
-              <p className="text-xl font-bold text-white">{active.title}</p>
+              <p className="font-display text-xl font-medium text-white">{active.title}</p>
               <p className="mt-2 text-slate-300">{active.description}</p>
             </div>
           </div>

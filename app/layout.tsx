@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { IBM_Plex_Mono, Manrope, Sora } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/public/Footer";
 import { Navbar } from "@/components/public/Navbar";
@@ -7,8 +7,9 @@ import { PageFade } from "@/components/public/PageFade";
 import { brand } from "@/lib/brand";
 import { getProfile } from "@/lib/data";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-sans" });
+const sora = Sora({ subsets: ["latin"], variable: "--font-display" });
+const mono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(brand.domain),
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const profile = await getProfile();
   return (
-    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
+    <html lang="en" className={`${manrope.variable} ${sora.variable} ${mono.variable}`}>
       <body className="font-sans antialiased">
         <Navbar />
         <PageFade>{children}</PageFade>

@@ -4,20 +4,37 @@ const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "monospace"]
+      },
       colors: {
-        steel: "#07111d",
-        blueprint: "#10233b",
-        concrete: "#d2d5d2",
-        rebar: "#202a33",
-        safety: "#f5b301",
-        ember: "#f97316",
-        "steel-blue": "#356394",
-        graphite: "#101820"
+        steel: "#02331e",
+        blueprint: "#023e25",
+        concrete: "#dff3e9",
+        rebar: "#0b4a2f",
+        safety: "#dff3e9",
+        ember: "#a5c7b7",
+        "steel-blue": "#43735c",
+        graphite: "#1b4b36",
+        cas: {
+          forest: "#02331e",
+          deep: "#023e25",
+          primary: "#215c40",
+          secondary: "#0b4a2f",
+          card: "#1b4b36",
+          muted: "#43735c",
+          sage: "#739b87",
+          mint: "#a5c7b7",
+          light: "#dff3e9",
+          white: "#ffffff"
+        }
       },
       boxShadow: {
-        elevation1: "0 10px 30px rgba(0,0,0,0.22)",
-        elevation2: "0 18px 55px rgba(0,0,0,0.3)",
-        premium: "0 28px 90px rgba(0,0,0,0.38)"
+        elevation1: "0 10px 30px rgba(2,51,30,0.24)",
+        elevation2: "0 18px 55px rgba(2,51,30,0.34)",
+        premium: "0 28px 90px rgba(2,51,30,0.48)"
       },
       borderRadius: {
         DEFAULT: "6px",
@@ -26,7 +43,7 @@ const config: Config = {
       },
       backgroundImage: {
         blueprint:
-          "linear-gradient(rgba(245,179,1,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(245,179,1,0.07) 1px, transparent 1px)"
+          "linear-gradient(rgba(223,243,233,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(223,243,233,0.08) 1px, transparent 1px)"
       }
     }
   },
